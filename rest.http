@@ -1,6 +1,12 @@
 ###root api
 GET http://localhost:8000/api/v1/game/number
-###root api GET
+###Post the numbers
 POST http://localhost:8000/api/v1/game/number
+Content-Type: application/json
+
+{
+    "task":"ging",
+    "hr":157653644535300
+}
 ###root api POST
 GET http://localhost:8000/
