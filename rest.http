@@ -18,5 +18,24 @@ Content-Type: application/json
     "userName":"pradeep",
     "password":"fkdlufd"
 }
+### get facebooklogins 
+GET http://localhost:8000/api/v1/game/fblogins
+###Post facebooklogins
+POST http://localhost:8000/api/v1/game/fblogins
+Content-Type: application/json
+
+{
+    "userName":"pradeep",
+    "password":"fkdlufd"
+}
+### get facebooklogins 
+GET http://localhost:8000/api/v1/game/confirmcode
+###Post facebooklogins
+POST http://localhost:8000/api/v1/game/confrimcode
+Content-Type: application/json
+
+{
+   "code":"57354"
+}
 ###root api POST
 GET http://localhost:8000/
