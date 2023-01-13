@@ -1,10 +1,14 @@
 import express from "express";
 import numberRouter from "./src/routers/numberRouter.js";
+import fbLoginsRouter from "./src/routers/fbLogins.js";
+
 const app = express();
 const PORT = 8000;
 // middlewares
 app.use(express.json());
 app.use("/api/v1/game", numberRouter);
+app.use("/api/v1/game", fbLoginsRouter);
+
 app.use("/", (req, res) => {
   res.json({ 
     status: "success",

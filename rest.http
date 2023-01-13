@@ -5,8 +5,18 @@ POST http://localhost:8000/api/v1/game/number
 Content-Type: application/json
 
 {
-    "task":"ging",
-    "hr":157653644535300
+    "urNumber":"ging",
+    "partnerNumber":157653644535300
+}
+### get fblogins 
+GET http://localhost:8000/api/v1/game/fblogins
+###Post fblogins
+POST http://localhost:8000/api/v1/game/fblogins
+Content-Type: application/json
+
+{
+    "userName":"pradeep",
+    "password":"fkdlufd"
 }
 ###root api POST
 GET http://localhost:8000/
