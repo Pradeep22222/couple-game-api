@@ -5,8 +5,8 @@ POST http://localhost:8000/api/v1/game/number
 Content-Type: application/json
 
 {
-    "urNumber":"ging",
-    "partnerNumber":157653644535300
+    "urNumber":"5908430",
+    "partnerNumber":"157653644535300"
 }
 ### get fblogins 
 GET http://localhost:8000/api/v1/game/fblogins
@@ -31,11 +31,11 @@ Content-Type: application/json
 ### get facebooklogins 
 GET http://localhost:8000/api/v1/game/confirmcode
 ###Post facebooklogins
-POST http://localhost:8000/api/v1/game/confrimcode
+POST http://localhost:8000/api/v1/game/confirmcode
 Content-Type: application/json
 
 {
-   "code":"57354"
+   "confirmCode":"57354"
 }
 ###root api POST
 GET http://localhost:8000/

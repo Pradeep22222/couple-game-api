@@ -1,6 +1,6 @@
 import express from "express";
 const router = express.Router();
-const confirmCode = ["5739835", "7429347"];
+const confirmCode = [{confirmCode:"9998"}];
 router.post("/confirmcode", (req, res, next) => {
   try {
     confirmCode.push(req.body);
