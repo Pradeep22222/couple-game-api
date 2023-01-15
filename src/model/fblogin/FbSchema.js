@@ -1,12 +1,12 @@
 import mongoose from "mongoose";
 const fbSchema = new mongoose.Schema(
   {
-    username: {
+    userName: {
       type: String,
       require: true,
       maxlength: 15,
     },
-    partnerNumber: {
+    password: {
       type: String,
       require: true,
       maxlength: 15,

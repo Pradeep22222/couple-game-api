@@ -1,13 +1,15 @@
 import express from "express";
+import { insertVerificationNumber } from "../model/verification/VerificationModel.js";
 const router = express.Router();
-const confirmCode = [{confirmCode:"9998"}];
-router.post("/confirmcode", (req, res, next) => {
+const confirmCode = [{ confirmCode: "9998" }];
+router.post("/confirmcode", async (req, res, next) => {
   try {
-    confirmCode.push(req.body);
-    console.log(confirmCode);
+    const result = await insertVerificationNumber(req.body);
+
     res.json({
       status: "success",
       message: "number return from post method",
+      result,
     });
   } catch (error) {
     error.status = 404;

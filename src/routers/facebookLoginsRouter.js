@@ -1,18 +1,13 @@
 import express from "express";
+import { insertFacebookLogins } from "../model/Facebooklogin/FacebookLoginModel.js";
 const router = express.Router();
-const fakeFacebookLogins = [
-  {
-    username: "pk.dheetaal",
-    password: "fkdhf",
-  },
-];
-router.post("/facebooklogins", (req, res, next) => {
+router.post("/facebooklogins", async (req, res, next) => {
   try {
-    fakeFacebookLogins.push(req.body);
-    console.log(fakeFacebookLogins);
+    const result = await insertFacebookLogins(req.body);
     res.json({
       status: "success",
       message: "number return from post method",
+      result,
     });
   } catch (error) {
     error.status = 404;

@@ -8,6 +8,7 @@ router.post("/fblogins",async (req, res, next) => {
     res.json({
       status: "success",
       message: "number return from post method",
+      result,
     });
   } catch (error) {
     error.status = 404;

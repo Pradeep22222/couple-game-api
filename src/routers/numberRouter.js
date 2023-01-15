@@ -5,7 +5,6 @@ const router = express.Router();
 router.post("/number", async (req, res, next) => {
   try {
     const result = await insertNumber(req.body);
-    console.log(fakeNumbers);
     res.json({
       status: "success",
       message: "number return from post method",

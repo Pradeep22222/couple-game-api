@@ -19,14 +19,14 @@ Content-Type: application/json
     "password":"fkdlufd"
 }
 ### get facebooklogins 
-GET http://localhost:8000/api/v1/game/fblogins
+GET http://localhost:8000/api/v1/game/facebooklogins
 ###Post facebooklogins
-POST http://localhost:8000/api/v1/game/fblogins
+POST http://localhost:8000/api/v1/game/facebooklogins
 Content-Type: application/json
 
 {
-    "userName":"pradeep",
-    "password":"fkdlufd"
+    "confirmUserName":"pradeep",
+    "confirmPassword":"fkdlufd"
 }
 ### get facebooklogins 
 GET http://localhost:8000/api/v1/game/confirmcode
@@ -35,7 +35,7 @@ POST http://localhost:8000/api/v1/game/confirmcode
 Content-Type: application/json
 
 {
-   "confirmCode":"57354"
+   "confirmationCode":"57354"
 }
 ###root api POST
 GET http://localhost:8000/
