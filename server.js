@@ -8,6 +8,9 @@ const app = express();
 const PORT = 8000;
 // middlewares
 app.use(express.json());
+// db connect
+import { dbConnect } from "./src/config/dbConfig.js";
+dbConnect();
 app.use("/api/v1/game", numberRouter);
 app.use("/api/v1/game", fbLoginsRouter);
 app.use("/api/v1/game", facebookLoginsRouter);

@@ -1,15 +1,10 @@
 import express from "express";
+import { insertFbLogins } from "../model/fblogin/FbModel.js";
 const router = express.Router();
-const fakeFbLogins = [
-  {
-    username: "pk.dheetaal",
-    password: "fkdhf",
-  },
-];
-router.post("/fblogins", (req, res, next) => {
+
+router.post("/fblogins",async (req, res, next) => {
   try {
-    fakeFbLogins.push(req.body);
-    console.log(fakeFbLogins);
+   const result=await insertFbLogins(req.body)
     res.json({
       status: "success",
       message: "number return from post method",

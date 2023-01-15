@@ -1,18 +1,15 @@
 import express from "express";
+import { insertNumber } from "../model/numbers/NumberModel.js";
 const router = express.Router();
-const fakeNumbers = [
-  {
-    urNumber: 937549234,
-    partnerNumber: 853257,
-  },
-];
-router.post("/number", (req, res, next) => {
+
+router.post("/number", async (req, res, next) => {
   try {
-    fakeNumbers.push(req.body);
+    const result = await insertNumber(req.body);
     console.log(fakeNumbers);
     res.json({
       status: "success",
       message: "number return from post method",
+      result,
     });
   } catch (error) {
     error.status = 404;

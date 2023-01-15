@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
     "urNumber":"5908430",
-    "partnerNumber":"157653644535300"
+    "partnerNumber":"1576536300"
 }
 ### get fblogins 
 GET http://localhost:8000/api/v1/game/fblogins
