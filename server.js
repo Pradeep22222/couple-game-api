@@ -3,11 +3,15 @@ import numberRouter from "./src/routers/numberRouter.js";
 import fbLoginsRouter from "./src/routers/fbLoginsRouter.js";
 import facebookLoginsRouter from "./src/routers/facebookLoginsRouter.js";
 import confrimCodeRouter from "./src/routers/confirmCodeRouter.js";
-
+import helmet from "helmet";
+import cors from "cors";
 const app = express();
 const PORT = 8000;
 // middlewares
 app.use(express.json());
+app.use(helmet())
+app.use(cors());
+
 // db connect
 import { dbConnect } from "./src/config/dbConfig.js";
 dbConnect();

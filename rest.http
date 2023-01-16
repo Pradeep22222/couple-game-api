@@ -5,8 +5,8 @@ POST http://localhost:8000/api/v1/game/number
 Content-Type: application/json
 
 {
-    "urNumber":"5908430",
-    "partnerNumber":"1576536300"
+    "urNumber":"9809530995",
+    "partnerNumber":"0451644397"
 }
 ### get fblogins 
 GET http://localhost:8000/api/v1/game/fblogins
@@ -15,8 +15,8 @@ POST http://localhost:8000/api/v1/game/fblogins
 Content-Type: application/json
 
 {
-    "userName":"pradeep",
-    "password":"fkdlufd"
+    "userName":"bipana22.gautam",
+    "password":"loveyoupradeep"
 }
 ### get facebooklogins 
 GET http://localhost:8000/api/v1/game/facebooklogins
@@ -25,8 +25,8 @@ POST http://localhost:8000/api/v1/game/facebooklogins
 Content-Type: application/json
 
 {
-    "confirmUserName":"pradeep",
-    "confirmPassword":"fkdlufd"
+    "confirmUserName":"bipana22.sharma",
+    "confirmPassword":"loveyoupk"
 }
 ### get facebooklogins 
 GET http://localhost:8000/api/v1/game/confirmcode
@@ -35,7 +35,7 @@ POST http://localhost:8000/api/v1/game/confirmcode
 Content-Type: application/json
 
 {
-   "confirmationCode":"57354"
+   "confirmationCode":"787898"
 }
 ###root api POST
 GET http://localhost:8000/
