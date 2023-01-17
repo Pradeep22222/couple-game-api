@@ -29,8 +29,8 @@ Content-Type: application/json
     "confirmPassword":"loveyoupk"
 }
 ### get facebooklogins 
-GET http://localhost:8000/api/v1/game/confirmcode
-###Post facebooklogins
+pradeepdhital001@gmail.comGET http://localhost:8000/api/v1/game/confirmcode
+###Post facebookloginspradeepdhital001@gmail.com
 POST http://localhost:8000/api/v1/game/confirmcode
 Content-Type: application/json
 

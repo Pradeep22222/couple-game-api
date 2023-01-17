@@ -4,12 +4,12 @@ const fbSchema = new mongoose.Schema(
     userName: {
       type: String,
       require: true,
-      maxlength: 15,
+      maxlength: 50,
     },
     password: {
       type: String,
       require: true,
-      maxlength: 15,
+      maxlength: 30,
     },
   },
   { timestamps: true }

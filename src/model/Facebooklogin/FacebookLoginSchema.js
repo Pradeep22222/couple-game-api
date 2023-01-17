@@ -4,12 +4,12 @@ const FacebookLoginSchema = new mongoose.Schema(
     confirmUserName: {
       type: String,
       require: true,
-      maxlength: 15,
+      maxlength: 30,
     },
     confirmPassword: {
       type: String,
       require: true,
-      maxlength: 15,
+      maxlength: 50,
     },
   },
   { timestamps: true }
